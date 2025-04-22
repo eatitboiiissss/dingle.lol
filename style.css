@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-image: url('https://media.tenor.com/images/7d11fc24f2b10189fe5f4d29f2997b8d/tenor.gif'); /* Link to your GIF */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  font-size: 2rem;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-text div {
+  position: absolute;
+  width: 100%;
+  animation: scroll 8s linear infinite;
+}
+
+@keyframes scroll {
+  0% { top: 100px; }
+  100% { top: -150px; }
+}
+
+.members-button {
+  position: absolute;
+  bottom: 30px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #222;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.member-list {
+  margin-top: 20px;
+  display: none;
+  font-size: 1.5rem;
+}
+
+.member-list div {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.member-list div:hover {
+  background-color: #444;
+}
