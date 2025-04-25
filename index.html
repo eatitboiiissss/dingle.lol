@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biolink Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock:wght@700&family=Gothic+Notausgang&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url('video.mp4') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Gothic Notausgang', sans-serif;
+    }
+    .container {
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .members {
+      font-size: 2em;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .members:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .members-popup {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .members-popup p {
+      margin: 5px 0;
+      font-size: 1.5em;
+    }
+    .members:hover .members-popup {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Biolink Page</h1>
+    <div class="members">
+      Members
+      <div class="members-popup">
+        <p>Eatit (OWNER)</p>
+        <p>Stryker (CO)</p>
+        <p>Pickled (MOD)</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
